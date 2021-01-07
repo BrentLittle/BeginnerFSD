@@ -1,0 +1,68 @@
+.container {
+    /* background-color: red;
+    background: #80ff00;
+    background: linear-gradient(to left, #80ff00, #ccff99);
+    box-shadow: 3px 5px 3px gray; */
+}
+
+h2 {
+    color: rgb(0, 204, 255);
+    text-shadow: 1px 1px 3px darkblue;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.borderImg {
+    border-top: 10px dashed turquoise;
+}
+
+ul li {
+    color: white;
+    font-size: 20px;
+}
+
+ul>li {
+    color: red;
+}
+
+div h1 {
+    color: green;
+}
+
+h1, h2, h3 {
+    color: #AFF;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* 
+Each element selector has a value of 1 
+    Selector Values from Greatest to least
+        1. Style Attribute
+        2. ID
+        3. Class / Attribute
+        4. Element
+
+    If you have two of equal value the one that is last in the CSS file will win and be applied to the HTML
+
+
+    div h1{
+        has a point value of 0002 as there are two element selectors
+    }
+
+    .container h1{
+        has a point value of 0011 which beats out the one above
+    }
+
+    #ID{
+        has a point value of 0100 which beats out both above
+    }
+
+    [i="foo"]{
+        has a point value of 1000 which beats out all others
+    }
+*/

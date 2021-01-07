@@ -1,0 +1,31 @@
+/* SELECTING A SPECIFIC HTML ELEMENT */
+
+body {
+    background-color: #5fc934;
+}
+
+h1 {
+    color: cornsilk;
+    text-align: center;
+}
+
+
+/* SPECIFYING A PARTICULAR CLASS */
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+
+
+/* Selecting Elements by ID, these need to be unique names 
+SHOULD NOT BE USIG ID NAMES FOR STYLING PURPOSES 
+IDs ARE GENERALLY USED TO INTERACT WTIH HTML THROUHG JS */
+
+#circle {
+    color: darkred;
+    font-size: 40px;
+    text-align: center;
+}

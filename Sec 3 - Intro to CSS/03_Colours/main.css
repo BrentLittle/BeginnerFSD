@@ -1,0 +1,30 @@
+.container {
+    /* You can enter a colour by the name */
+    background-color: red;
+    /* We can alos have a gradient in out colours by performing the following */
+    background: #80ff00;
+    background: linear-gradient(#80ff00, #ccff99);
+    background: linear-gradient(to right, #80ff00, #ccff99);
+    background: linear-gradient(to top, #80ff00, #ccff99);
+    background: linear-gradient(to left, #80ff00, #ccff99);
+    box-shadow: 3px 5px 3px gray;
+}
+
+h1 {
+    /* You can also use a hex code with 3 or 6 characters */
+    color: #FFFFFF;
+    color: #fff;
+    /* We can also create shadows */
+    text-shadow: 2px 2px black;
+    /* We can also add a colour to the shadow */
+    text-shadow: 2px 2px black;
+    /* We can finally blue the shadow so it is not as harsh */
+    /* This blurs out the shadow by a specified number of pixels */
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    /* can also use an rbg value */
+    color: rgb(0, 204, 255);
+    text-shadow: 1px 1px 3px darkblue;
+}

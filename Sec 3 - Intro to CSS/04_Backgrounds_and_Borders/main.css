@@ -1,0 +1,27 @@
+.container {
+    /* background-color: red;
+    background: #80ff00;
+    background: linear-gradient(to left, #80ff00, #ccff99);
+    box-shadow: 3px 5px 3px gray; */
+}
+
+h1 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    color: rgb(0, 204, 255);
+    text-shadow: 1px 1px 3px darkblue;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.borderImg {
+    /* border: 2px dashed red; */
+    border-right: 10px dashed red;
+}

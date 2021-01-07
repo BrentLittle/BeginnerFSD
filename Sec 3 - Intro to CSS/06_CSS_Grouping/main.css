@@ -1,0 +1,54 @@
+.container {
+    /* background-color: red;
+    background: #80ff00;
+    background: linear-gradient(to left, #80ff00, #ccff99);
+    box-shadow: 3px 5px 3px gray; */
+}
+h2 {
+    color: rgb(0, 204, 255);
+    text-shadow: 1px 1px 3px darkblue;
+}
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.borderImg {
+    border-top: 10px dashed turquoise;
+}
+ul li {
+    color: white;
+    font-size: 20px;
+}
+ul>li {
+    color: red;
+}
+
+/* GROUPING IS USED TO REDUCE CODE REDUNDENCY */
+
+
+/* h1 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px black;
+}
+
+h3 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px black;
+} */
+
+
+/* the code above can be simplified to below */
+
+h1, h2, h3 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* so instead of having 3 separate sections of code that are identical we can 
+GROUP them together into one section of code that all 3 tags will use */
