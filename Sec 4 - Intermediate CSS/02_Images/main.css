@@ -1,0 +1,29 @@
+html {
+    font-family: sans-serif, serif, "Times New Roman";
+}
+
+body {
+    /* background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #444;
+    /* text-align: center; */
+}
+
+.borderImg {
+    /* border-bottom: 10px dashed hotpink; */
+    border-radius: 10px;
+    width: 700px;
+    height: 700px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+    opacity: 50%;
+    display: block;
+    margin: auto;
+}
