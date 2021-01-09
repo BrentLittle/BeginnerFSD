@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Bagel Emporium</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+    <nav>
+      <ul class="topnav" id="dropdownClick">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="topnav-right"><a href="#signup">Sign In</a></li>
+        <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+        <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="container" id="gradientSection">
+      <div class="row">
+        <div class="col-6">
+          <div class="leftCol">
+            <h1 class="large">What-A-Bagel</h1>
+            <h1 class="large">Bakery and Cakery</h1>
+          </div>
+          <form action="">
+            <div class="leftCol">
+              <h2>Username</h2>
+              <input class="inputbox" type="text" name="username" placeholder="Username:">
+              <h2>Password</h2>
+              <input class="inputbox" type="text" name="password" placeholder="Password:">
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="rightCol">
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/rdeQT7KkqM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <h1 class="section2Header">The Best Bagels Someone Can Eat</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="images/bagels.jpg" alt="Picture of Bagel">
+            </div>
+            <label for=""> Everything Bagels</label>
+            <p>An everything bagel is a type of bagel baked with a large variety of toppings, the exact ingredients depending on the vendor. Toppings commonly include poppy seeds, sesame seeds, onion flakes, garlic flakes, pretzel salt, and pepper.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="images/bluberryBagel.png" alt="Picture of Bagel">
+            </div>
+            <label for=""> New York Style Bagels</label>
+            <p>The New York bagel contains malt, is cold-fermented for several days to develop the flavors and enhance the crust, and is boiled in salted water before baking in a standard oven.The resulting bagel has a fluffy interior and a chewy crust.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="images/jalapenoCheese.jpg" alt="Picture of Bagel">
+            </div>
+            <label for=""> Montreal Style Bagels</label>
+            <p>Different from the New York style, the Montreal-style bagel contains malt and sugar with no salt; it is boiled in honey-sweetened water before baking in a wood-fired oven. It is predominantly of the sesame "white" seeds variety</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="LearnMoreButton">
+            More Bagels Here
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <article>
+            <p>A bagel, also historically spelled beigel, is a bread product originating in the Jewish communities of Poland. It is traditionally shaped by hand into the form of a ring from yeasted wheat dough, roughly hand-sized, that is first boiled for
+              a short time in water and then baked. The result is a dense, chewy, doughy interior with a browned and sometimes crisp exterior. Bagels are often topped with seeds baked on the outer crust, with the traditional ones being poppy and sesame
+              seeds. Some may have salt sprinkled on their surface, and there are different dough types, such as whole-grain and rye.</p>
+          </article>
+        </div>
+        <div class="col-5">
+          <div class="bagelPlatter">
+            <img src="images/bagelPlatter.jpg" alt="Bagel Platter">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="endFooter">
+      <div class="row">
+        <div class="col-3 mobileFoot">
+          <h1>Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobileFoot">
+          <h1>Products</h1>
+          <ul>
+            <li>Bagels</li>
+            <li>Bagels</li>
+            <li>Bagels</li>
+          </ul>
+        </div>
+        <div class="col-3 mobileFoot">
+          <h1>Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobileFoot">
+          <h1>Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script>
+      function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          /*change topnav to topnav.responsive*/
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+
+</html>

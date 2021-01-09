@@ -1,0 +1,305 @@
+/* ##### Defaults ##### */
+
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+article p {
+    font-size: 25px;
+    padding: 25px;
+    line-height: 1;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+*, ::after, ::before {}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ##### Nav Bar ##### */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    list-style: none;
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #FFF;
+}
+
+ul.topnav li.dropdown {
+    display: none;
+}
+
+
+/* ##### Custom Styling ##### */
+
+#gradientSection {
+    background: #076DFF;
+    background: linear-gradient( #076DFF, #65a5ff);
+}
+
+div.box {
+    background-color: #FFF;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 15%), 0 2px 3px 0 rgba(0, 1, 0, .1);
+    text-align: center;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 25px 15px 10px 15px;
+}
+
+div.bagelPlatter img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 75%), 2px 2px 4px 2px rgba(0, 0, 0, 1);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 45px;
+}
+
+button.LearnMoreButton {
+    display: block;
+    margin: auto;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.leftCol {
+    margin-left: 30%;
+}
+
+div.rightCol {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: #FFF;
+    font-size: 56px;
+    margin: 0;
+    line-height: 125%;
+}
+
+form h2 {
+    color: #FFF;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+h1.section2Header {
+    text-align: center;
+    font-size: 65px;
+}
+
+footer.endFooter {
+    background-color: #666;
+    padding-left: 10%
+}
+
+footer.endFooter h1 {
+    color: #fff;
+    font-size: 25px;
+}
+
+footer.endFooter ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.endFooter ul li {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+
+/* ##### Mobile ##### */
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.dropdown {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    div.col-6, div.col-7, div.col-5, div.col-4 {
+        width: 100%;
+        margin: 0;
+    }
+    div.mobileFoot {
+        width: 50%;
+        margin: 0;
+        display: block;
+    }
+    div.leftCol, div.rightCol {
+        margin: 15px;
+    }
+    input[type="text"] {
+        width: 300px;
+    }
+    div.video iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+    h1.section2Header {
+        font-size: 55px;
+    }
+    articel p {
+        font-size: 20px;
+    }
+    div.bagelPlatter img {
+        width: 100%;
+    }
+    div.bagelPlatter {
+        padding: 20px;
+    }
+}
+
+
+/* ##### Columns ##### */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
